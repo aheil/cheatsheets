@@ -1,5 +1,5 @@
 Restart all running containers
 
 ```
-docker restart $dpcker ps -q
+docker restart $(docker ps -q)
 ```
