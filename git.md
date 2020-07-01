@@ -20,3 +20,44 @@ Rename branches (master to main)
 git branch -m master main
 git push -u origin main
 ```
+
+Create Repos out of local folder
+
+1. Create remote repo (e.g. GitHub) and copy remote repo URL
+
+```
+git init
+git add <file>
+git commit -m "initial checkin"
+git remote add origin remote <remote URL>
+git remote -v
+git push origin master
+```
+
+There might be an error 
+
+```error: failed to push some refs to <remote URL>```
+
+This shoud not happen if you have added and commited a file as above. 
+Git creates its master branch only after the commit to the local repository. 
+If you just initialize the repository, the master is not created yet.
+
+```
+git add .gitignore 
+git commit -m "gitignore added"
+```
+
+No again try 
+
+```
+git push origin master
+```
+```
+
+
+
+
+
+
+
+
