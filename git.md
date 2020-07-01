@@ -1,27 +1,35 @@
 
-Create new branch
+##Create new branch
 ``git branch <branchname>`` 
 
-Switch to branch
+##Switch to branch
 ``git checkout <branchname>``
 
-Create and directly switch to a new branch
+##Create and directly switch to a new branch
 ``git checkout -b <branchname>`` 
 
-Merge a branch
+##Merge a branch
 ```
 git checkout main
 git merge <branchname>
 git branch -d <branchname>
 ```
 
-Rename branches (master to main)
+##Rename branches (master to main)
 ```
 git branch -m master main
 git push -u origin main
+git push origin --delete master
 ```
 
-Create Repos out of local folder
+If you end up with 
+```
+ ! [remote rejected] master (refusing to delete the current branch: refs/heads/master)
+```
+got to GitHub Settings/Branches and swith the default branch to main
+Try the previous command again.
+
+##Create Repos out of local folder
 
 1. Create remote repo (e.g. GitHub) and copy remote repo URL
 
@@ -52,7 +60,8 @@ No again try
 ```
 git push origin master
 ```
-```
+
+
 
 
 
