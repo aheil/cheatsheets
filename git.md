@@ -29,9 +29,9 @@ If you end up with
 got to GitHub Settings/Branches and swith the default branch to main
 Try the previous command again.
 
-## Create Repos out of local folder
+## Create repo out of local folder
 
-1. Create remote repo (e.g. GitHub) and copy remote repo URL
+Create remote repo (e.g. GitHub) and copy remote repo URL
 
 ```
 git init
