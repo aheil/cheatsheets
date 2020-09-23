@@ -37,7 +37,7 @@ Create remote repo (e.g. GitHub) and copy remote repo URL
 git init
 git add <file>
 git commit -m "initial checkin"
-git remote add origin remote <remote URL>
+git remote add origin <remote URL>
 git remote -v
 git push origin master
 ```
