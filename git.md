@@ -67,8 +67,25 @@ git push origin master
 git pull origin master --allow-unrelated-histories
 ```
 
+### Debug when something fails 
 
+Run 
 
+```
+GIT_TRACE=1 git commit -m -S  "foobar"    
+`` 
 
+will get a detailed output of the commands rund by git, you then can run each of them independently. E.g.#
 
+```bash
+00:12:33.129974 git.c:418               trace: built-in: git commit -m 'foobar'
+00:12:33.156978 run-command.c:643       trace: run_command: gpg --status-fd=2 -bsau 34534EF345eEF
+```
+you might want to run 
+
+```bash
+gpg --status-fd=2 -bsau 34534EF345eEF
+```
+
+to find an error.
 
