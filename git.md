@@ -86,6 +86,22 @@ you might want to run
 ```bash
 gpg --status-fd=2 -bsau 34534EF345eEF
 ```
-
 to find an error.
+
+# Replaing a tag 
+
+```
+git tag -d v1.1.0-beta
+git push --delete origin refs/tags/v1.1.0-beta
+```
+Now do your commits 
+
+```
+git tag v1.1.0-beta
+git push origin v1.1.0-beta
+```
+
+
+
+
 
