@@ -36,9 +36,10 @@ uid           [ultimate] [jpeg image of size 4881]
 sub   rsa2048 2013-11-02 [E] [expires: 2020-11-02]
 ```
 
-enable GPG signing in GIt 
+# Enable GPG signing in GIt 
 
-git config commit.gpgSign true #in Repo dir
+```bash
+git config commit.gpgSign true # in repository dir
 git config --global user.signingKey C52BAB19
-
+```
 
