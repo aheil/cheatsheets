@@ -24,7 +24,7 @@ gpg --import private.key
 ```bash
 gpg --edit-key EE17046BC0E0692E11EC89A68F69260C38C9C219 trust quit 
 ```
-and entering e.g. <kbd>5/kbd>
+and entering e.g. <kbd>5</kbd>
 
 will result in someting similar to
 
