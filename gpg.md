@@ -42,4 +42,34 @@ sub   rsa2048 2013-11-02 [E] [expires: 2020-11-02]
 git config commit.gpgSign true # in repository dir
 git config --global user.signingKey C52BAB19
 ```
+# Fix Visual Studio Code »Git: gpg: skipped«
 
+When confronted with 
+
+![Git: gpg: skipped "...": No secret Key](img/no_secret_key.png)
+
+your Git Log will show 
+
+```
+gpg: skipped "****************": No secret key
+gpg: signing failed: No secret key
+error: gpg failed to sign the data
+fatal: failed to write commit object
+```
+
+Run 
+
+```bash
+where gpg.exe
+```
+
+
+copy the path to run 
+
+```bash
+git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
+```
+
+Redo the commit 
+
+![Please enter the passphrase... dialog](img/passphrase.png)
